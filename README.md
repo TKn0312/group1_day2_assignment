@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-This project explores NYC DOB NOW Façade Compliance Filings using supervised machine learning.
+This project explores NYC DOB NOW Façade Compliance Filings using the application of supervised machine learning.
 
 The objective is to investigate building façade compliance data, identify patterns, and develop predictive models based on the available features.
 
