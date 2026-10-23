@@ -1,18 +1,25 @@
+# virtual environments
 .venv/
-__pycache__/
-.ipynb_checkpoints/
-.env
 venv/
 env/
+__pycache__/
 
-# data and outputs (the notebook downloads the dataset from NYC Open Data)
+# Jupyter
+.ipynb_checkpoints/
+
+# data: downloaded by the notebook, not committed
 *.csv
 data/*
 !data/.gitkeep
+
+# trained model: published on Hugging Face, not on GitHub
+models/*.joblib
+test_download/
 
 # OS files
 .DS_Store
 Thumbs.db
 
 # secrets
+.env
 kaggle.json
