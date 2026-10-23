@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+venv/
+env/
+
+# data and outputs (the notebook downloads the dataset from NYC Open Data)
+*.csv
+data/*
+!data/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# secrets
+kaggle.json
