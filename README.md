@@ -140,8 +140,7 @@ the cycle and the borough; materials and wall types add little.
 
 **Lessons learned:** asking the AI to *explain* (not only to do) was the most useful part: it made the notebook understandable for
 beginners. Checking its work mattered: results that look final can change when the notebook is re-run, so the text, the model card and
-the published model have to be checked against each other. Git was the hardest part at the start (working in a fork without write access
-to the team repository); with access to the team repository, one "Sync Changes" keeps everyone up to date.
+the published model have to be checked against each other.
 
 ## License
 
