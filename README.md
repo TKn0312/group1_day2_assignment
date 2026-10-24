@@ -2,7 +2,7 @@
 
 **Team:** Amelia, Jerome, Kazuko, Sahil
 **Course:** AI Methods I – Day 2: Supervised learning (IAAC MaAI 2026/27)
-**Model on Hugging Face:** https://huggingface.co/iaac-maai/day2-group1-unsafe-facade
+**Model on Hugging Face:** https://huggingface.co/iaac-maai/day2-team1-unsafe-facade
 
 ## Use case
 

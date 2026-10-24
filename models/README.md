@@ -189,7 +189,7 @@ import joblib
 import pandas as pd
 from huggingface_hub import hf_hub_download
 
-path = hf_hub_download(repo_id="iaac-maai/day2-group1-unsafe-facade", filename="model.joblib")
+path = hf_hub_download(repo_id="iaac-maai/day2-team1-unsafe-facade", filename="model.joblib")
 model = joblib.load(path)
 
 materials = ["MASONRY", "OTHER", "TERRA_COTTA", "NATURAL_STONE", "CONCRETE", "STUCCO_EIFS", "GLASS", "METAL"]
