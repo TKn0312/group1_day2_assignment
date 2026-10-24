@@ -133,15 +133,15 @@ the cycle and the borough; materials and wall types add little.
 
 | | |
 |---|---|
-| **Tools** | Claude Code (agent, in VS Code), *(team: add any other tools you used, e.g. ChatGPT)* |
-| **Why** | To help beginners with Git/GitHub, to structure the repository and notebooks according to the brief, and to explain machine learning concepts |
-| **Where** | Git and GitHub setup (forks, pull requests, syncing), repository structure, `.gitignore` and `requirements.txt`, the supervised learning notebook, re-running the notebooks, the model card and this README |
-| **How** | The agent edited files and ran commands itself (git, running notebooks, checking results), with each action approved by us. Example prompts: *"please create a folder named data and another one called figures"*, *"give me a summary of the data cleaning"*, *"what is F2 score"*, *"lets save the model and upload it to huggingface"*. We checked the output by reading the notebook step by step, asking the agent to explain every concept we did not understand (F2, leakage, cross-validation, thresholds), and comparing the numbers in the text with the notebook outputs. *(team: add what you corrected or rejected)* |
+| **Tools** | Claude, used through the Claude Code extension in VS Code (an agent that can edit files and run commands) |
+| **Why** | We are beginners in Git and machine learning: we expected help setting up and syncing the repositories, structuring the work according to the brief, and understanding the concepts well enough to defend our choices |
+| **Where** | Git and GitHub (forks, pull requests, syncing the team repository), repository structure, `.gitignore` and `requirements.txt`, the supervised learning notebook, re-running the notebooks, the model card, this README and the upload to Hugging Face |
+| **How** | The agent edited files and ran commands itself (git, running the notebooks, uploading the model), and we approved each action. Example prompts: *"please create a folder named data and another one called figures"*, *"give me a summary of the data cleaning"*, *"what is F2 score"*, *"lets save the model and upload it to huggingface"*. We checked the output by going through the notebook step by step, asking for an explanation of every concept we did not understand (F2, SWARMP, leakage, cross-validation, the decision threshold), and comparing the numbers in the text with the notebook outputs. **What we corrected:** re-training the model on a different computer gave slightly different results (the grid search picked `min_samples_leaf=1` instead of 5, test recall 0.920 instead of 0.932). We noticed the mismatch, chose to publish the re-trained model, and had every number in the notebook text, the model card and this README updated to match it. |
 
-**Lessons learned:** asking the agent to *explain* (not only to do) was the most useful part: it made the notebook understandable for
-beginners. Checking the agent's work mattered: re-running the notebook on another computer gave slightly different results, which we had
-to notice and update everywhere. Git was the hardest part at the start (working in a fork without access to the team repository).
-*(team: add your own lessons)*
+**Lessons learned:** asking the AI to *explain* (not only to do) was the most useful part: it made the notebook understandable for
+beginners. Checking its work mattered: results that look final can change when the notebook is re-run, so the text, the model card and
+the published model have to be checked against each other. Git was the hardest part at the start (working in a fork without write access
+to the team repository); with access to the team repository, one "Sync Changes" keeps everyone up to date.
 
 ## License
 
