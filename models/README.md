@@ -151,9 +151,9 @@ As a **ranking** (probability of UNSAFE): average precision **0.605** (random or
 Inspecting the riskiest **10%** of buildings first finds **34%** of all UNSAFE facades (3.4× better than random);
 the riskiest **20%** finds **49%**.
 
-![Test set confusion matrix](confusion_matrix.png)
+![Test set confusion matrix](https://raw.githubusercontent.com/iaac-maai/group1_day2_assignment/main/figures/13_confusion_matrix.png)
 
-![Share of UNSAFE facades found vs share of buildings inspected, riskiest first](inspection_ranking.png)
+![Share of UNSAFE facades found vs share of buildings inspected, riskiest first](https://raw.githubusercontent.com/iaac-maai/group1_day2_assignment/main/figures/15_inspection_ranking.png)
 
 **Where it performs worst:**
 - As a yes/no classifier it flags **76%** of buildings: it catches 92% of UNSAFE facades but only 28% of its alarms are right,
@@ -167,7 +167,7 @@ the riskiest **20%** finds **49%**.
 Materials and wall types add very little (≤ 0.008 each); their directions agree with engineering sense: terra cotta is more
 often UNSAFE (it cracks and its steel anchors rust), glass curtain walls and brick masonry walls less often.
 
-![Permutation importance](feature_importance.png)
+![Permutation importance](https://raw.githubusercontent.com/iaac-maai/group1_day2_assignment/main/figures/14_feature_importance.png)
 
 ## Limitations and biases
 
